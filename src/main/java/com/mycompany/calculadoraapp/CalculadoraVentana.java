@@ -17,11 +17,12 @@ public class CalculadoraVentana extends JFrame implements ActionListener {
     private String operador = "";
     private double primerNumero = 0;
 
+    //Creacion de los elementos de la ventana
     public CalculadoraVentana() {
         setTitle("Calculadora");
         setSize(400, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
+        
         
         //Configuracion del Mostrador
         mostradorDeNumeros = new JTextField();
@@ -50,7 +51,9 @@ public class CalculadoraVentana extends JFrame implements ActionListener {
         add(panelBotones, BorderLayout.CENTER);
         setVisible(true);
     }
-
+    
+    
+    //Acciones de los botones
     @Override
     public void actionPerformed(ActionEvent e) {
         String entrada = e.getActionCommand();

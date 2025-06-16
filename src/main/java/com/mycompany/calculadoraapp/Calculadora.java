@@ -10,10 +10,9 @@ package com.mycompany.calculadoraapp;
  */
 public class Calculadora {
     public static void main(String[] args) {
-        // Ejecuta la calculadora en el hilo de la GUI
-        javax.swing.SwingUtilities.invokeLater(() -> {
-            new CalculadoraVentana();
-        });
+
+        javax.swing.SwingUtilities.invokeLater(() -> { new CalculadoraVentana();});
+        
     }
 }
 
